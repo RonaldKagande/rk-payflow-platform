@@ -1,0 +1,61 @@
+
+# Help file: keep tracked if it contains useful documentation
+# HELP.md
+
+# Maven build output
+target/
+**/target/
+
+# Maven Wrapper
+# Keep the wrapper scripts and properties tracked.
+# If using Maven Wrapper, consider tracking the wrapper JAR too.
+# .mvn/wrapper/maven-wrapper.jar
+
+# Spring Boot / Java
+*.log
+logs/
+
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+
+# Local configuration overrides
+application-local.yml
+application-local.yaml
+application-local.properties
+
+# STS / Eclipse
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Gradle build output
+.gradle/
+build/
+
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
