@@ -1,0 +1,13 @@
+
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.3.3
+    container_name: rk-payflow-keycloak
+    command: start-dev
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN_USERNAME:-admin}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:?Set KEYCLOAK_ADMIN_PASSWORD first}
+      KC_HOSTNAME: http://localhost:8080
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
